@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Cadastrar Cliente";
+}
+<h1>@ViewData["Title"]</h1>
+
+<br />
+
+<form action = "/Home/Sucesso.cshtml" >
+<label>Nome</label>
+<input type="text" name="Nome"/>
+<br><br>
+<label>Sobrenome</label>
+<input type = "text" name="Sobrenome"/>
+<br /><br />
+<input type = "submit" value="Enviar"/>
+</form>
+
+<br />
+
+<!-- exercício -->
+<h2>@ViewData["nome"]</h2>
+<h2>@ViewData["sobrenome"]</h2>
+@TempData["mensagem"]
